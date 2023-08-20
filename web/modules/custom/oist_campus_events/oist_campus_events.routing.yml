@@ -1,0 +1,7 @@
+oist_campus_events.infoscreen:
+  path: '/infoscreen'
+  defaults:
+    _controller: '\Drupal\oist_campus_events\Controller\OISTCampusEventsController::infoscreen'
+    _title: 'Campus Events'
+  requirements:
+    _permission: 'access content'

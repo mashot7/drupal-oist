@@ -1,0 +1,52 @@
+<div class="row">
+  {% for item in events %}
+    {% set event = item.event %}
+    <div class="col-12 col-lg-6 mb-4 mx-auto">
+      <div class="card h-100 campus-theme-item">
+        <h2 class="card-title p-3 pb-0">
+          {{ event.title }}
+        </h2>
+        <div class="card-body d-flex flex-column justify-content-end">
+          <p class="card-text">
+            <strong>Date: </strong>
+            <span>From: </span>
+            <span class="oist-text-red">
+              {{ event.date_start }}
+            </span>
+            <span>To: </span>
+            <span class="oist-text-red">
+              {{ event.date_end }}
+            </span>
+          </p>
+          <p class="card-text">
+            <strong>Time: </strong>
+            {% if event.time_start == '(All day)' %}
+              <span class="oist-text-red">
+                {{ event.time_end }}
+              </span>
+            {% else %}
+              <span>From: </span>
+              <span class="oist-text-red">
+                {{ event.time_start }}
+              </span>
+              <span>To: </span>
+              <span class="oist-text-red">
+                {{ event.time_end }}
+              </span>
+            {% endif %}
+          </p>
+          <p class="card-text">
+            <strong>Location: </strong>
+            <span class="oist-text-red">
+              {% if event.location %}
+                {{ event.location }}
+              {% else %}
+                N/A
+              {% endif %}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

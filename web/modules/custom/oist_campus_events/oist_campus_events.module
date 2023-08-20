@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function oist_campus_events_theme($existing, $type, $theme, $path) {
+  return [
+    'events_display' => [
+      'variables' => ['events' => []],
+      'template' => 'events-display', // this corresponds to events-display.html.twig
+    ],
+  ];
+}

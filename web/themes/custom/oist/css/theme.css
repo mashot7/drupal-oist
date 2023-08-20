@@ -1,0 +1,16 @@
+.campus-theme-item .card-text {
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.campus-theme-item .card-title {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: rgba(17, 24, 39, 1);
+  font-weight: bold;
+  text-align: center;
+}
+
+.oist-text-red {
+  color: rgb(214, 30, 32);
+}

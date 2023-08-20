@@ -1,0 +1,5 @@
+name: OIST Campus Events
+type: module
+description: 'Display Campus Events.'
+package: OIST
+core_version_requirement: ^9 || ^10

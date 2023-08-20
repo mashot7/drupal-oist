@@ -1,0 +1,8 @@
+services:
+  oist_campus_events.fetch_events:
+    class: Drupal\oist_campus_events\Services\FetchEventsService
+    arguments: [
+      '@http_client',
+      '@serialization.json',
+      '@logger.factory'
+    ]

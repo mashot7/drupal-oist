@@ -1,0 +1,8 @@
+bootstrap:
+  version: 5.0.2
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
